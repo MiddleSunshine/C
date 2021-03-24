@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include "3.h"
-#include "4.h"
+#include "stdio.h"
+#include "9.h"
 
 int main() {
-    Page3Index();
+    Page9Index();
     return 0;
 }
+

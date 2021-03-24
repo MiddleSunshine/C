@@ -27,7 +27,7 @@ void setIntParam() {
 void setIntWithOtherBaseSystem() {
     short int yearDays = 0555;// 八进制的 365表示
     short int monthAmount = 0xc;// 十六进制的 12
-    // todo 在输出前加上 # 可以展示编码前的符号，而不仅仅是数字
+    // 在输出前加上 # 可以展示编码前的符号，而不仅仅是数字
     printf("一年有%d天，采用八进制表示为%#o / %o\n", yearDays, yearDays, yearDays);
     printf("一年有%d个月，采用十六进制表示为%#x / %x\n", monthAmount, monthAmount, monthAmount);
 }
@@ -38,7 +38,7 @@ void wrongPrintf() {
     int maxInt = INT32_MAX;
     printf("当采用%%hd输出shor int的数据时，原本的%d的值会变成%hd\n", maxInt, maxInt);
     // 当采用%hd输出shor int的数据时，原本的2147483647的值会变成-1
-    // todo 因为short int产生了溢出，所以就变成了-1
+    // todo 这里为什么会输出 -1
 }
 
 // ====================== char部分的代码 ======================
@@ -52,7 +52,7 @@ void setChar() {
 void defaultFloat(){
     float pi=3.1415926;
     double width=3.1;
-    // todo 这里显示为小数点后3位小数
+    // 这里显示为小数点后3位小数
     printf("这个圆的宽为：%.3f\n",2*pi*width);
 }
 
