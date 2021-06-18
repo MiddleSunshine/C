@@ -1,8 +1,7 @@
 #include "stdio.h"
-#include "9.h"
+#include "const.h"
 
-int main() {
-    Page9Index();
+int main(){
+    printf("%d\n",add(1,2));
     return 0;
 }
-
